@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Empire_Cities_Direct
+ * @package Ruth_Chafin_Interior_Design
  */
 
 get_header();

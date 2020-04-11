@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Empire_Cities_Direct
+ * @package Ruth_Chafin_Interior_Design
  */
 
 get_header();
@@ -15,11 +15,11 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'empire-cities-direct' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'ruth-chafin-interior-design' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'empire-cities-direct' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'ruth-chafin-interior-design' ); ?></p>
 
 					<?php
 					get_search_form();
@@ -28,7 +28,7 @@ get_header();
 					?>
 
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'empire-cities-direct' ); ?></h2>
+						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'ruth-chafin-interior-design' ); ?></h2>
 						<ul>
 							<?php
 							wp_list_categories( array(
@@ -44,8 +44,8 @@ get_header();
 
 					<?php
 					/* translators: %1$s: smiley */
-					$empire_cities_direct_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'empire-cities-direct' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$empire_cities_direct_archive_content" );
+					$ruth_chafin_interior_design_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'ruth-chafin-interior-design' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$ruth_chafin_interior_design_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>

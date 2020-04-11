@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -rvz --progress --delete --exclude-from=/home/jason/Projects/empirecities/wp-content/themes/empire-cities-direct/rsync-exclude.txt ~/Projects/empirecities/wp-content/themes/empire-cities-direct/ bbstage:~/public_html/empirecities/wp-content/themes/empire-cities-direct/
+rsync -rvz --progress --delete --exclude-from=/home/jason/Projects/empirecities/wp-content/themes/ruth-chafin-interior-design/rsync-exclude.txt ~/Projects/empirecities/wp-content/themes/ruth-chafin-interior-design/ bbstage:~/public_html/empirecities/wp-content/themes/ruth-chafin-interior-design/

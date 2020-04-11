@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Empire_Cities_Direct
+ * @package Ruth_Chafin_Interior_Design
  */
 
 ?>
@@ -15,16 +15,16 @@
 
 	<footer id="colophon" class="site-footer wrap">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'empire-cities-direct' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ruth-chafin-interior-design' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'empire-cities-direct' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'ruth-chafin-interior-design' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'empire-cities-direct' ), 'empire-cities-direct', '<a href="http://@Herm71">Jason Chafin</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ruth-chafin-interior-design' ), 'ruth-chafin-interior-design', '<a href="http://@Herm71">Jason Chafin</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Empire_Cities_Direct
+ * @package Ruth_Chafin_Interior_Design
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'empire-cities-direct' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ruth-chafin-interior-design' ); ?></a>
 
 	<header id="masthead" class="site-header">
 
@@ -39,15 +39,15 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$empire_cities_direct_description = get_bloginfo( 'description', 'display' );
-			if ( $empire_cities_direct_description || is_customize_preview() ) :
+			$ruth_chafin_interior_design_description = get_bloginfo( 'description', 'display' );
+			if ( $ruth_chafin_interior_design_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $empire_cities_direct_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $ruth_chafin_interior_design_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'empire-cities-direct' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ruth-chafin-interior-design' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

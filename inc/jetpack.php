@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Empire_Cities_Direct
+ * @package Ruth_Chafin_Interior_Design
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function empire_cities_direct_jetpack_setup() {
+function ruth_chafin_interior_design_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'empire_cities_direct_infinite_scroll_render',
+		'render'    => 'ruth_chafin_interior_design_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function empire_cities_direct_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'empire-cities-direct-style',
+			'stylesheet' => 'ruth-chafin-interior-design-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function empire_cities_direct_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'empire_cities_direct_jetpack_setup' );
+add_action( 'after_setup_theme', 'ruth_chafin_interior_design_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function empire_cities_direct_infinite_scroll_render() {
+function ruth_chafin_interior_design_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

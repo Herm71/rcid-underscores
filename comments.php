@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Empire_Cities_Direct
+ * @package Ruth_Chafin_Interior_Design
  */
 
 /*
@@ -28,18 +28,18 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$empire_cities_direct_comment_count = get_comments_number();
-			if ( '1' === $empire_cities_direct_comment_count ) {
+			$ruth_chafin_interior_design_comment_count = get_comments_number();
+			if ( '1' === $ruth_chafin_interior_design_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'empire-cities-direct' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'ruth-chafin-interior-design' ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			} else {
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $empire_cities_direct_comment_count, 'comments title', 'empire-cities-direct' ) ),
-					number_format_i18n( $empire_cities_direct_comment_count ),
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $ruth_chafin_interior_design_comment_count, 'comments title', 'ruth-chafin-interior-design' ) ),
+					number_format_i18n( $ruth_chafin_interior_design_comment_count ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			}
@@ -63,7 +63,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'empire-cities-direct' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'ruth-chafin-interior-design' ); ?></p>
 			<?php
 		endif;
 

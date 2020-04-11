@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Empire_Cities_Direct
+ * @package Ruth_Chafin_Interior_Design
  */
 
 ?>
@@ -14,14 +14,14 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php empire_cities_direct_post_thumbnail(); ?>
+	<?php ruth_chafin_interior_design_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'empire-cities-direct' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ruth-chafin-interior-design' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -34,7 +34,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'empire-cities-direct' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'ruth-chafin-interior-design' ),
 						array(
 							'span' => array(
 								'class' => array(),
