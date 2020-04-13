@@ -1,6 +1,6 @@
 <?php
 /**
- * Empire Cities Direct Theme Customizer
+ * Ruth Chafin Interior Design Theme Customizer
  *
  * @package Ruth_Chafin_Interior_Design
  */

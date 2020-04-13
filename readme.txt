@@ -1,4 +1,4 @@
-=== Empire Cities Direct ===
+=== Ruth Chafin Interior Design ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Empire Cities Direct.
+A starter theme called Ruth Chafin Interior Design.
 
 == Description ==
 
@@ -25,7 +25,7 @@ WordPress Theme for Capital Cities Direct
 
 = Does this theme support any plugins? =
 
-Empire Cities Direct includes support for Infinite Scroll in Jetpack.
+Ruth Chafin Interior Design includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

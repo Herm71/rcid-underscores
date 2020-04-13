@@ -1,6 +1,6 @@
 <?php
 /**
- * Empire Cities Direct functions and definitions
+ * Ruth Chafin Interior Design functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -19,7 +19,7 @@ if ( ! function_exists( 'ruth_chafin_interior_design_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Empire Cities Direct, use a find and replace
+		 * If you're building a theme based on Ruth Chafin Interior Design, use a find and replace
 		 * to change 'ruth-chafin-interior-design' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'ruth-chafin-interior-design', get_template_directory() . '/languages' );
@@ -74,10 +74,10 @@ if ( ! function_exists( 'ruth_chafin_interior_design_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			//'height'      => 250,
+			'width'       => 600,
 			'flex-width'  => false,
-      'flex-height' => false,
+      'flex-height' => true,
       'header-text' => array( 'site-title', 'site-description' ),
 		) );
 	}

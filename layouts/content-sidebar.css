@@ -1,34 +1,39 @@
 /*
- * Theme Name: Empire Cities Direct
+ * Theme Name: Ruth Chafin Interior Design
  *
- * Layout: Content-Sidebar
+ * Layout: Site Content
  *
  * Learn more: https://developer.wordpress.org/themes/basics/template-files/
 */
 
-.content-area {
-	float: left;
-	margin: 0 -25% 0 0;
-	width: 100%;
+.site-content,
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
 }
-.site-main {
-	margin: 0 25% 0 0;
+
+site-main {
+    margin: 0 25% 0 0;
 }
+
 .site-content .widget-area {
-	float: right;
-	overflow: hidden;
-	width: 25%;
+    float: right;
+    overflow: hidden;
+    width: 25%;
 }
+
 .site-footer {
-	clear: both;
-	width: 100%;
+    clear: both;
+    width: 100%;
 }
 
 .no-sidebar .content-area {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .no-sidebar .site-main {
-	margin-right: 0;
+    margin-right: 0;
 }
