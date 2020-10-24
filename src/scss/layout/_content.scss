@@ -1,0 +1,14 @@
+/*
+ * Theme Name: Ruth Chafin Interior Design
+ *
+ * Layout: Site Content
+ *
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+
+.site-content,
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: $size__max-width;
+}

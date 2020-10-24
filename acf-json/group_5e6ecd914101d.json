@@ -1,0 +1,138 @@
+{
+    "key": "group_5e6ecd914101d",
+    "title": "Business Directory",
+    "fields": [
+        {
+            "key": "field_5e7bce18ce709",
+            "label": "Website",
+            "name": "website",
+            "type": "url",
+            "instructions": "Enter the business website",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "35",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e7bd1550194c",
+            "label": "Phone",
+            "name": "phone",
+            "type": "intl_tel_input",
+            "instructions": "Enter phone number",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "separateDialCode": 0,
+            "allowDropdown": 1,
+            "initialCountry": "auto",
+            "excludeCountries": "",
+            "onlyCountries": "",
+            "preferredCountries": ""
+        },
+        {
+            "key": "field_5e7bd2eeaa35e",
+            "label": "Street Address",
+            "name": "street_address",
+            "type": "text",
+            "instructions": "Enter the business street address.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e7bd35df54b7",
+            "label": "City",
+            "name": "city",
+            "type": "text",
+            "instructions": "Enter business city",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e7bd39b8d66d",
+            "label": "State",
+            "name": "state",
+            "type": "text",
+            "instructions": "Enter state, if not California",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "CA",
+            "placeholder": "CA",
+            "prepend": "",
+            "append": "",
+            "maxlength": 2
+        },
+        {
+            "key": "field_5e7bd3f38d66e",
+            "label": "Zip",
+            "name": "zip",
+            "type": "number",
+            "instructions": "Enter business zip code.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "directory"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1585421720
+}

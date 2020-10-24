@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+}
+
+h1 {
+    @include relative-font-size(2);
+}
+
+h2 {
+    @include relative-font-size(1.75);
+}
+
+h3 {
+    @include relative-font-size(1.5);
+}
+
+h4 {
+    @include relative-font-size(1.25);
+}
+
+h5 {
+    @include relative-font-size(1.125);
+}
+
+h6 {
+    @include relative-font-size(1.0625);
+}
+
+p {
+    @include relative-font-size(1);
+}

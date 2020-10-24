@@ -1,0 +1,46 @@
+{
+    "name": "ruth-chafin-interior-design",
+    "version": "1.0.0",
+    "description": "packages for Ruth Chafin Interior Design website",
+    "main": "gulpfile.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Herm71/rcid-underscores.git"
+    },
+    "keywords": [
+        "wordpress"
+    ],
+    "author": "Jason Chafin",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Herm71/rcid-underscores/issues"
+    },
+    "homepage": "https://github.com/Herm71/rcid-underscores#readme",
+    "devDependencies": {
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/register": "^7.12.1",
+        "autoprefixer": "^10.0.1",
+        "babel-loader": "^8.1.0",
+        "browser-sync": "^2.26.13",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-if": "^3.0.0",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-postcss": "^9.0.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-wp-pot": "^2.5.0",
+        "gulp-zip": "^5.0.2",
+        "postcss": "^8.1.2",
+        "vinyl-named": "^1.1.0",
+        "webpack-stream": "^6.1.0",
+        "yargs": "^16.1.0"
+    }
+}
