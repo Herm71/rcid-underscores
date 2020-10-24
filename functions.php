@@ -2,7 +2,9 @@
 /**
  * Ruth Chafin Interior Design functions and definitions
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * @author Jason Chafin
+ * @link https://github.com/Herm71/rcid-underscores
+ * @since 0.0.0
  *
  * @package Ruth_Chafin_Interior_Design
  */
