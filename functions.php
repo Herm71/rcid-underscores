@@ -75,7 +75,7 @@ if ( ! function_exists( 'ruth_chafin_interior_design_setup' ) ) :
 		 */
 		add_theme_support( 'custom-logo', array(
 			//'height'      => 250,
-			'width'       => 600,
+			'width'       => 350,
 			'flex-width'  => false,
       'flex-height' => true,
       'header-text' => array( 'site-title', 'site-description' ),
