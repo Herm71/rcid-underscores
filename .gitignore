@@ -17,6 +17,7 @@ style.min.css
 # Development files
 /node_modules
 /assets/vendor/
+/dist
 
 .idea/
 
