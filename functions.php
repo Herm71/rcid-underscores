@@ -130,7 +130,7 @@ add_action( 'widgets_init', 'ruth_chafin_interior_design_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ruth_chafin_interior_design_scripts() {
-  wp_enqueue_style( 'ruth-chafin-interior-design-style', get_stylesheet_uri, array(), THEME_VERSION );
+  wp_enqueue_style( 'ruth-chafin-interior-design-style', get_stylesheet_uri(), array(), THEME_VERSION );
   
   wp_enqueue_style( 'ruth-chafin-interior-design-dist-style', get_template_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
 
