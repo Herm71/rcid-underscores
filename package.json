@@ -1,6 +1,6 @@
 {
     "name": "ruth-chafin-interior-design",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "packages for Ruth Chafin Interior Design website",
     "main": "gulpfile.js",
     "scripts": {
