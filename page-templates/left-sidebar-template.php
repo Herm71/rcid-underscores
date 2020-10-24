@@ -1,6 +1,6 @@
 <?php
  /**
-* Template Name: Sidebar Left Page
+* Template Name: Left Sidebar Page
 *
 * @package WordPress
 * @subpackage Ruth_Chafin_Interior_Design
