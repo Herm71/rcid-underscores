@@ -18,6 +18,8 @@ style.min.css
 /node_modules
 /assets/vendor/
 /dist
+/languages
+/bundled
 
 .idea/
 
