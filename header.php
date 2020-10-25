@@ -25,22 +25,21 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ruth-chafin-interior-design' ); ?></a>
 
 	<header id="masthead" class="site-header">
+  <section id="top-bar" class="rcid-header-bar">
+<nav class="secondary-navigation top-navigation" role="navigation" aria-label="Secondary Menu">
+<?php rcid_top_menu(); ?>
 
+</nav>
+<div class="rcid-header-bar-widget site-search">
+<?php if ( is_active_sidebar( 'top-sidebar' ) ) { ?>
+ <div id="site-search" class="widget woocommerce widget_product_search">
+     <?php dynamic_sidebar('top-sidebar'); ?>
+ </div>
+<?php } ?>
+</div>
+
+</section>
     <div class="wrap">
-    <section id="top-bar" class="rcid-header-bar">
-    <nav class="secondary-navigation top-navigation" role="navigation" aria-label="Secondary Menu">
-
-
-    </nav>
-    <div class="hds-header-bar-widget site-search">
-    <?php if ( is_active_sidebar( 'top-sidebar' ) ) { ?>
-     <div id="site-search" class="widget woocommerce widget_product_search">
-         <?php dynamic_sidebar('top-sidebar'); ?>
-     </div>
-    
-    </div>
-
-    </section>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
