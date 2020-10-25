@@ -27,6 +27,20 @@
 	<header id="masthead" class="site-header">
 
     <div class="wrap">
+    <section id="top-bar" class="rcid-header-bar">
+    <nav class="secondary-navigation top-navigation" role="navigation" aria-label="Secondary Menu">
+
+
+    </nav>
+    <div class="hds-header-bar-widget site-search">
+    <?php if ( is_active_sidebar( 'top-sidebar' ) ) { ?>
+     <div id="site-search" class="widget woocommerce widget_product_search">
+         <?php dynamic_sidebar('top-sidebar'); ?>
+     </div>
+    
+    </div>
+
+    </section>
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
