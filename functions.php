@@ -134,7 +134,9 @@ function ruth_chafin_interior_design_scripts() {
   
   wp_enqueue_style( 'ruth-chafin-interior-design-dist-style', get_template_directory_uri() . '/dist/css/bundle.css', array(), THEME_VERSION, 'all' );
 
-	wp_enqueue_script( 'ruth-chafin-interior-design-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+  wp_enqueue_script( 'ruth-chafin-interior-design-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+  
+  wp_enqueue_script( 'font-awesome-6', 'https://kit.fontawesome.com/5957a2b1a4.js', array(), null);
 
   wp_enqueue_script( 'ruth-chafin-interior-design-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
   
@@ -142,8 +144,7 @@ function ruth_chafin_interior_design_scripts() {
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
-  }
-  
+  }  
   //deregister WP jquery, register Google libraries
   if (is_admin()) {
     return; //Do not de-register in admin
@@ -164,6 +165,18 @@ add_action( 'admin_enqueue_scripts', 'ruth_chafin_interior_design__admin_scripts
 function ruth_chafin_interior_design__admin_scripts() {
   wp_enqueue_style( 'ruth-chafin-interior-design-dist-style', get_template_directory_uri() . '/dist/css/admin.css', array(), '1.0.0', 'all' );
 }
+
+
+/**
+ * Font Awesome Script Attributes
+ */
+  function add_font_awesome_6_cdn_attributes( $html, $handle ) {
+    if ( 'font-awesome-6' === $handle ) {
+        return str_replace( "media='all'", "media='all' crossorigin='anonymous'", $html );
+    }
+    return $html;
+}
+add_filter( 'style_loader_tag', 'add_font_awesome_6_cdn_attributes', 10, 2 );
 
 /**
  * Implement the Custom Header feature.
@@ -191,4 +204,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
