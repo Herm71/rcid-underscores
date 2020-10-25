@@ -1,3 +1,22 @@
+//
+// Mixins
+//===============================
+//
+// Media Queries
+//===============================
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
 @mixin relative-font-size($ratio) {
     font-size: $base-font-size * $ratio;
 }
@@ -25,9 +44,4 @@
 // Clear after (not all clearfix need this also)
 @mixin clearfix-after() {
     clear: both;
-}
-
-// Column width with margin
-@mixin column-width($numberColumns: 3) {
-    width: map-get( $columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1)) / $numberColumns);
 }

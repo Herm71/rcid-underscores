@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
-@import "variables-site/index";
+@import "variables/index";
 @import "mixins/index";
 
 /*--------------------------------------------------------------
@@ -76,8 +76,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 @import "layout/header";
-@import "layout/content";
 @import "layout/content-sidebar";
+@import "layout/sidebar-content";
+@import "layout/content";
 
 /*--------------------------------------------------------------
 # Navigation
@@ -119,7 +120,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Infinite scroll
 --------------------------------------------------------------*/
 
-@import "modules/infinite-scroll";
+//@import "modules/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Media
