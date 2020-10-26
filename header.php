@@ -63,17 +63,18 @@
           <p class="site-description"><?php echo $ruth_chafin_interior_design_description; /* WPCS: xss ok. */ ?></p>
           <?php endif; ?>
         </div><!-- .site-branding -->
-
-        <nav id="site-navigation" class="main-navigation">
-          <button class="menu-toggle" aria-controls="primary-menu"
-            aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ruth-chafin-interior-design' ); ?></button>
-          <?php
+        <div class="primary-navigation">
+          <nav id="site-navigation" class="main-navigation">
+            <button class="menu-toggle" aria-controls="primary-menu"
+              aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ruth-chafin-interior-design' ); ?></button>
+            <?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-        </nav><!-- #site-navigation -->
+          </nav><!-- #site-navigation -->
+        </div><!-- .primary-navigation -->
       </div><!-- #wrap -->
     </header><!-- #masthead -->
 

@@ -62,6 +62,14 @@
     .current-menu-ancestor>a {}
 }
 
+.primary-navigation {
+    background-color: rgba(17, 17, 17, 0.56);
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+}
+
 .secondary-navigation {
     @include media-query ($on-desktop) {
         div {
