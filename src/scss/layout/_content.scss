@@ -12,3 +12,13 @@
     margin: 0 auto;
     max-width: $size__max-width;
 }
+
+.wrap {
+    @include media-query($on-desktop) {
+        &::after {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+    }
+}

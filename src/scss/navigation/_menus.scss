@@ -62,12 +62,28 @@
     .current-menu-ancestor>a {}
 }
 
+#page {
+    .site-header {
+        .primary-navigation {
+            background-color: rgba(17, 17, 17, 0.56);
+        }
+    }
+}
+
+.site-header {
+    .primary-navigation {
+        clear: both;
+        background: rgba(17, 17, 17, 0.56);
+    }
+}
+
 .primary-navigation {
-    background-color: rgba(17, 17, 17, 0.56);
-    margin-left: -9999px;
-    margin-right: -9999px;
-    padding-left: 9999px;
-    padding-right: 9999px;
+    @include media-query ($on-desktop) {
+        margin-left: -9999px;
+        margin-right: -9999px;
+        padding-left: 9999px;
+        padding-right: 9999px;
+    }
 }
 
 .secondary-navigation {
