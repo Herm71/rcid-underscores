@@ -11,6 +11,10 @@
     width: 100%;
     margin: 0 auto;
     max-width: $size__max-width;
+    padding: 0 $spacing-unit;
+    @include media-query ($on-desktop) {
+        padding: 0 $spacing-unit;
+    }
 }
 
 .wrap {

@@ -1,16 +1,33 @@
 .page-template-right-sidebar-template {
-    .content-area {
-        float: left;
-        margin: 0 (-$size__site-sidebar) 0 0;
-        width: $size__site-main;
-    }
-    .site-main {
-        margin: 0 $size__site-sidebar 0 0;
-    }
-    .site-content .widget-area {
-        float: right;
-        overflow: hidden;
-        width: $size__site-sidebar;
+    .site-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include media-query($on-desktop) {
+            grid-template-columns: 75% 25%;
+        }
+        .content-area {
+            width: $size__site-main;
+            @include media-query($on-desktop) {
+                padding-right: $spacing-unit;
+                grid-column-start: 1;
+                grid-row: 1/1
+            }
+            .site-main {
+                @include media-query($on-desktop) {
+                    margin-right: $spacing-unit;
+                }
+            }
+        }
+        .widget-area {
+            float: right;
+            overflow: hidden;
+            width: $size__site-main;
+            @include media-query($on-desktop) {
+                padding-right: $spacing-unit;
+                grid-column-start: 2;
+                grid-row: 1/1
+            }
+        }
     }
     .site-footer {
         clear: both;
