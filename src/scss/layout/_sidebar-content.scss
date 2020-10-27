@@ -1,16 +1,20 @@
 .page-template-left-sidebar-template {
-    .content-area {
-        float: right;
-        margin: 0 0 0 (-$size__site-sidebar);
-        width: $size__site-main;
-    }
-    .site-main {
-        margin: 0 0 0 $size__site-sidebar;
-    }
-    .site-content .widget-area {
-        float: left;
-        overflow: hidden;
-        width: $size__site-sidebar;
+    .site-content {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        .content-area {
+            float: right;
+            margin: 0 0 0 (-$size__site-sidebar);
+            width: $size__site-main;
+            .site-main {
+                margin: 0 0 0 $size__site-sidebar;
+            }
+        }
+        .widget-area {
+            float: left;
+            overflow: hidden;
+            width: $size__site-sidebar;
+        }
     }
     .site-footer {
         clear: both;
