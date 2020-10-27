@@ -1,6 +1,6 @@
 # Ruth Chafin Interior Design Wordpress Theme #
 
-[![GitHub license](https://badgen.net/github/license/Herm71/rcid-underscores?color=green)](https://github.com/Herm71/rcid-underscores)
+[![GitHub license](https://badgen.net/github/license/Herm71/rcid-underscores/green?icon=github)](https://github.com/Herm71/rcid-underscores)
 
 [![Github latest tag](https://badgen.net/github/tag/Herm71/rcid-underscores?icon=github)](https://github.com/Herm71/rcid-underscores)
 
