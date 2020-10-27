@@ -6,24 +6,23 @@
             grid-template-columns: 25% 75%;
         }
         .content-area {
-            // float: right;
-            // margin: 0 0 0 (-$size__site-sidebar);
             width: $size__site-main;
-            padding-left: 1.5em;
             @include media-query($on-desktop) {
+                padding-left: $spacing-unit;
                 grid-column-start: 2;
                 grid-row: 1/1
             }
             .site-main {
-                // margin: 0 0 0 $size__site-sidebar;
+                @include media-query($on-desktop) {
+                    margin-left: $spacing-unit;
+                }
             }
         }
         .widget-area {
-            // float: left;
             overflow: hidden;
             width: $size__site-main;
-            padding-right: 1.5em;
             @include media-query($on-desktop) {
+                padding-right: $spacing-unit;
                 grid-column-start: 1;
                 grid-row: 1/1
             }
