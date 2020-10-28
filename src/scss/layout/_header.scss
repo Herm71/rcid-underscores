@@ -17,8 +17,17 @@
     }
     nav,
     div {
+        align-self: center;
+        justify-self: center;
+    }
+    nav {
         @include media-query($on-desktop) {
-            align-self: center;
+            justify-self: start;
+        }
+    }
+    div {
+        @include media-query($on-desktop) {
+            justify-self: end;
         }
     }
 }

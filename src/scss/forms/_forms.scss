@@ -1,43 +1,44 @@
 @import "buttons";
 @import "fields";
-.header-bar {
-    .widget {
-        form {
-            .search-submit {
-                border: 0;
-                clip: rect(1px, 1px, 1px, 1px);
-                clip-path: inset(50%);
-                height: 1px;
-                margin: -1px;
-                overflow: hidden;
-                padding: 0;
-                position: absolute;
-                width: 1px;
-                word-wrap: normal !important;
-                top: 0;
-                left: 0;
-            }
+.widget {
+    form {
+        input[type=search] {
+            padding-left: $spacing-unit;
         }
-        //TODO #6 reposition magnifying glass
-        .search-form {
-            &::before {
-                display: inline-block;
-                font-style: normal;
-                font-variant: normal;
-                text-rendering: auto;
-                -webkit-font-smoothing: antialiased;
-                font-weight: 400;
-                line-height: 1;
-                font-family: 'Font Awesome 5 Free';
-                font-weight: 900;
-                content: "\f002";
-                line-height: inherit;
-                vertical-align: baseline;
-                position: absolute;
-                top: 1em;
-                left: 1em;
-                line-height: 1;
-            }
+        .search-submit {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            word-wrap: normal !important;
+            top: 0;
+            left: 0;
+        }
+    }
+    //TODO #6 reposition magnifying glass
+    .search-form {
+        &::before {
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            line-height: 1;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: "\f002";
+            line-height: inherit;
+            vertical-align: baseline;
+            position: absolute;
+            top: 0.5em;
+            left: 0.5em;
+            line-height: 1;
         }
     }
 }
