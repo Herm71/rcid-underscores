@@ -2,7 +2,6 @@
 .secondary-navigation {
     clear: both;
     display: block;
-    float: left;
     width: 100%;
     ul {
         display: none;
@@ -11,7 +10,6 @@
         padding-left: 0;
         ul {
             box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-            float: left;
             position: absolute;
             top: 100%;
             left: -999em;
@@ -24,6 +22,15 @@
                 &:hover>ul,
                 &.focus>ul {
                     left: 100%;
+                }
+                //FIXME: Background Color not working
+                background: $color__rcid-wine;
+                font-size: .9em;
+                &:first-child>a {
+                    padding-left: 1em;
+                }
+                a {
+                    color: $color__white;
                 }
             }
             a {
@@ -38,34 +45,40 @@
         li.focus>ul {
             left: auto;
         }
-    }
-    li {
-        float: left;
-        position: relative;
-        &:hover>a,
-        &.focus>a {}
-    }
-    a {
-        display: none;
-        &:first-child {
-            padding-left: 0;
-        }
-        @include media-query ($on-desktop) {
-            display: block;
-            text-decoration: none;
-            padding: 0 .5em
-        }
-    }
-    .current_page_item>a,
-    .current-menu-item>a,
-    .current_page_ancestor>a,
-    .current-menu-ancestor>a {}
-}
-
-#page {
-    .site-header {
-        .primary-navigation {
-            background-color: rgba(17, 17, 17, 0.56);
+        li {
+            position: relative;
+            display: inline-block;
+            text-align: left;
+            a {
+                display: block;
+                text-decoration: none;
+                padding: .5em .5em;
+            }
+            &.menu-item-has-children>a::after {
+                color: $color__rcid-orange;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 1;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                line-height: inherit;
+                vertical-align: baseline;
+                content: "\f107";
+                margin-left: 0.4em;
+            }
+            &:first-child>a {
+                padding-left: 0
+            }
+            &:hover>a,
+            &.focus>a {}
+            .current_page_item>a,
+            .current-menu-item>a,
+            .current_page_ancestor>a,
+            .current-menu-ancestor>a {}
         }
     }
 }
@@ -73,16 +86,30 @@
 .site-header {
     .primary-navigation {
         clear: both;
-        background: rgba(17, 17, 17, 0.56);
+        // background-color: rgba(17, 17, 17, 0.56);
+        background-color: $color__white;
     }
 }
 
 .primary-navigation {
-    @include media-query ($on-desktop) {
-        margin-left: -9999px;
-        margin-right: -9999px;
-        padding-left: 9999px;
-        padding-right: 9999px;
+    // @include media-query ($on-desktop) {
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+    // }
+    div {
+        ul {
+            li {
+                a {
+                    padding: 1.2em 0.857em;
+                    color: $color__white;
+                    color: $color__rcid-wine;
+                    font-weight: 700;
+                    background-color: $color__white;
+                }
+            }
+        }
     }
 }
 

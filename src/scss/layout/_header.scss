@@ -1,14 +1,15 @@
 .site-header {
     background: $color__rcid-brown;
     .site-branding {
-        padding: ($spacing-unit / 2) 0;
+        padding: $spacing-unit 0;
     }
 }
 
 .header-bar {
     display: none;
     grid-template-columns: 1fr;
-    background: rgba(17, 17, 17, .56);
+    background-color: rgba(17, 17, 17, .56);
+    background-color: $color__rcid-wine;
     @include media-query ($on-desktop) {
         display: grid;
         grid-template-columns: 75% 1fr;
