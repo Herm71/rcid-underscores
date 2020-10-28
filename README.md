@@ -10,7 +10,7 @@
 
 [![GitHub license](https://badgen.net/github/license/Herm71/rcid-underscores?color=purple)](https://github.com/Herm71/rcid-underscores)
 
-WordPress theme based on [_s (underscores)](https://underscores.me/).
+WordPress theme based on [_s (underscores)](https://underscores.me/)and referencing [Homestore theme](https://themes.woocommerce.com/homestore/).
 
 ## Credits ##
 
