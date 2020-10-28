@@ -1,5 +1,8 @@
 .site-header {
     background: $color__rcid-brown;
+    .site-branding {
+        padding: ($spacing-unit / 2) 0;
+    }
 }
 
 .header-bar {
