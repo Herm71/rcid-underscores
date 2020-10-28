@@ -34,11 +34,11 @@
             <?php rcid_top_menu(); ?>
 
           </nav>
-          <div class="rcid-header-bar-widget site-search">
-            <?php if ( is_active_sidebar( 'top-sidebar' ) ) { ?>
-            <div id="site-search" class="widget">
-              <?php dynamic_sidebar('top-sidebar'); ?>
-            </div>
+
+          <?php if ( is_active_sidebar( 'top-sidebar' ) ) { ?>
+          <div id="site-search" class="widget">
+            <?php dynamic_sidebar('top-sidebar'); ?>
+
             <?php } ?>
           </div>
 

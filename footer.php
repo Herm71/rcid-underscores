@@ -14,19 +14,25 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer wrap">
-  <div class="wrap">
-    <div class="footer-widgets">
-      <div class=footer-widget-1>
-        <?php if ( is_active_sidebar( 'footer-one' ) ) { ?>
-        <div id="site-search" class="widget">
-          <?php dynamic_sidebar('footer-one'); ?>
-        </div>
-        <?php } ?>
-      </div>
-      <div class=footer-widget-2></div>
-      <div class=footer-widget-3></div>
+
+  <div class="footer-widgets">
+    <div class=footer-widget-1>
+      <?php if ( is_active_sidebar( 'footer-one' ) ) { ?>
+      <?php dynamic_sidebar('footer-one'); ?>
+      <?php } ?>
+    </div>
+    <div class=footer-widget-2>
+      <?php if ( is_active_sidebar( 'footer-two' ) ) { ?>
+      <?php dynamic_sidebar('footer-two'); ?>
+      <?php } ?>
+    </div>
+    <div class=footer-widget-3>
+      <?php if ( is_active_sidebar( 'footer-three' ) ) { ?>
+      <?php dynamic_sidebar('footer-three'); ?>
+      <?php } ?>
     </div>
   </div>
+
   <div class="site-info">
     <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ruth-chafin-interior-design' ) ); ?>">
       <?php
