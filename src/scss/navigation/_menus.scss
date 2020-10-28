@@ -2,7 +2,6 @@
 .secondary-navigation {
     clear: both;
     display: block;
-    float: left;
     width: 100%;
     ul {
         display: none;
@@ -40,8 +39,10 @@
         }
     }
     li {
-        float: left;
+        // float: left;
         position: relative;
+        display: inline-block;
+        text-align: left;
         &:hover>a,
         &.focus>a {}
     }
@@ -62,30 +63,33 @@
     .current-menu-ancestor>a {}
 }
 
-#page {
-    .site-header {
-        .primary-navigation {
-            background-color: rgba(17, 17, 17, 0.56);
-        }
-    }
-}
-
 .site-header {
     .primary-navigation {
         clear: both;
         background: rgba(17, 17, 17, 0.56);
+        background-color: green;
     }
 }
 
 .primary-navigation {
-    @include media-query ($on-desktop) {
-        margin-left: -9999px;
-        margin-right: -9999px;
-        padding-left: 9999px;
-        padding-right: 9999px;
+    // @include media-query ($on-desktop) {
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+    // }
+    div {
+        ul {
+            li {
+                a {
+                    background-color: orange;
+                }
+            }
+        }
     }
 }
 
+.primary-navigation,
 .secondary-navigation {
     @include media-query ($on-desktop) {
         div {
