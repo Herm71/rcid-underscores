@@ -10,7 +10,6 @@
         padding-left: 0;
         ul {
             box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-            float: left;
             position: absolute;
             top: 100%;
             left: -999em;
@@ -23,6 +22,15 @@
                 &:hover>ul,
                 &.focus>ul {
                     left: 100%;
+                }
+                //FIXME: Background Color not working
+                background: $color__rcid-wine;
+                font-size: .9em;
+                &:first-child>a {
+                    padding-left: 1em;
+                }
+                a {
+                    color: $color__white;
                 }
             }
             a {
@@ -38,12 +46,14 @@
             left: auto;
         }
         li {
-            // float: left;
             position: relative;
             display: inline-block;
             text-align: left;
-            &:hover>a,
-            &.focus>a {}
+            a {
+                display: block;
+                text-decoration: none;
+                padding: .5em .5em;
+            }
             &.menu-item-has-children>a::after {
                 color: $color__rcid-orange;
                 -webkit-font-smoothing: antialiased;
@@ -58,19 +68,13 @@
                 line-height: inherit;
                 vertical-align: baseline;
                 content: "\f107";
-                margin-left: 1em;
+                margin-left: 0.4em;
             }
-            a {
-                display: none;
-                &:first-child {
-                    padding-left: 0;
-                }
-                @include media-query ($on-desktop) {
-                    display: block;
-                    text-decoration: none;
-                    padding: 0 .5em
-                }
+            &:first-child>a {
+                padding-left: 0
             }
+            &:hover>a,
+            &.focus>a {}
             .current_page_item>a,
             .current-menu-item>a,
             .current_page_ancestor>a,
