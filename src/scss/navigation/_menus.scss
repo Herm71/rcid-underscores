@@ -37,37 +37,53 @@
         li.focus>ul {
             left: auto;
         }
-    }
-    li {
-        // float: left;
-        position: relative;
-        display: inline-block;
-        text-align: left;
-        &:hover>a,
-        &.focus>a {}
-    }
-    a {
-        display: none;
-        &:first-child {
-            padding-left: 0;
+        li {
+            // float: left;
+            position: relative;
+            display: inline-block;
+            text-align: left;
+            &:hover>a,
+            &.focus>a {}
+            &.menu-item-has-children>a::after {
+                color: $color__rcid-orange;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 1;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                line-height: inherit;
+                vertical-align: baseline;
+                content: "\f107";
+                margin-left: 1em;
+            }
+            a {
+                display: none;
+                &:first-child {
+                    padding-left: 0;
+                }
+                @include media-query ($on-desktop) {
+                    display: block;
+                    text-decoration: none;
+                    padding: 0 .5em
+                }
+            }
+            .current_page_item>a,
+            .current-menu-item>a,
+            .current_page_ancestor>a,
+            .current-menu-ancestor>a {}
         }
-        @include media-query ($on-desktop) {
-            display: block;
-            text-decoration: none;
-            padding: 0 .5em
-        }
     }
-    .current_page_item>a,
-    .current-menu-item>a,
-    .current_page_ancestor>a,
-    .current-menu-ancestor>a {}
 }
 
 .site-header {
     .primary-navigation {
         clear: both;
-        background: rgba(17, 17, 17, 0.56);
-        background-color: green;
+        // background-color: rgba(17, 17, 17, 0.56);
+        background-color: $color__white;
     }
 }
 
@@ -82,14 +98,17 @@
         ul {
             li {
                 a {
-                    background-color: orange;
+                    padding: 1.2em 0.857em;
+                    color: $color__white;
+                    color: $color__rcid-wine;
+                    font-weight: 700;
+                    background-color: $color__white;
                 }
             }
         }
     }
 }
 
-.primary-navigation,
 .secondary-navigation {
     @include media-query ($on-desktop) {
         div {
