@@ -36,21 +36,49 @@
   <div class="site-info">
     <div class="address-social">
       <div class="address-social-left">
-        <ul class="rcid-address">
-          <li>Ruth Chafin Interior Design</li>
-          <li>CL# 123456789</li>
-          <li>721 Nevada St, Redlands, CA, 92373</li>
-          <li>(909) 796-9422</li>
-        </ul>
+
       </div>
       <div class="address-social-right">
-        <ul class="social">
-          <li>facebook</li>
-          <li>instagram</li>
-          <li>twitter</li>
-          <li>linked-in</li>
-          <li>houzz</li>
-        </ul>
+
+
+        <?php
+$rows = get_field('social_media_property', 'option');
+
+if ($rows) {
+              echo '<ul class="social">';
+              foreach ($rows as $row) {
+                  if ($row['social_media_site'] == 'Facebook') :
+                      $iconClass = "fa-facebook";
+                  elseif ($row['social_media_site'] == 'Twitter') :
+                          $iconClass = "fa-twitter";
+                  elseif ($row['social_media_site'] == 'Instagram') :
+                          $iconClass = "fa-instagram";
+                  elseif ($row['social_media_site'] == 'Pinterest') :
+                          $iconClass = "fa-pinterest-p";
+                  elseif ($row['social_media_site'] == 'LinkedIn') :
+                          $iconClass = "fa-linkedin";
+                  elseif ($row['social_media_site'] == 'YouTube') :
+                          $iconClass = "fa-youtube-play";
+                  elseif ($row['social_media_site'] == 'Vimeo') :
+                          $iconClass = "fa-vimeo";
+                  elseif ($row['social_media_site'] == 'Flickr') :
+                          $iconClass = "fa-flickr";
+                  elseif ($row['social_media_site'] == 'Medium') :
+                          $iconClass = "fa-medium";
+                  elseif ($row['social_media_site'] == 'Tumblr') :
+                          $iconClass = "fa-tumblr";
+                  elseif ($row['social_media_site'] == 'Snapchat') :
+                          $iconClass = "fa-snapchat-ghost";
+                  elseif ($row['social_media_site'] == 'Houzz') :
+                          $iconClass = "fa-houzz";
+                  elseif ($row['social_media_site'] == 'Choose one') :
+                          $iconClass = "";
+                  endif; 
+                  echo '<li><a href="'.$row['social_media_link'].'" title="'.$row['social_media_site'].'"><i class="fab '.$iconClass.'" aria-hidden="true"></i></a></li>';
+                }
+                echo '</ul>';
+              };      
+?>
       </div>
     </div>
     <div class="copyright"><span>Copyright © 2011&ndash;<?php echo date("Y");?></span></div>

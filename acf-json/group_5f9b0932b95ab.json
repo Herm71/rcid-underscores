@@ -1,0 +1,100 @@
+{
+    "key": "group_5f9b0932b95ab",
+    "title": "Footer",
+    "fields": [
+        {
+            "key": "field_5f9b0951a26f8",
+            "label": "Business Name",
+            "name": "business_name",
+            "type": "text",
+            "instructions": "Enter business name",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ruth Chafin Interior Design",
+            "placeholder": "Ruth Chafin Interior Design",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f9b099ba26f9",
+            "label": "Contractor's License",
+            "name": "contractors_license",
+            "type": "text",
+            "instructions": "Contractor's license number",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f9b09f6a26fa",
+            "label": "Business Address",
+            "name": "business_address",
+            "type": "text",
+            "instructions": "Enter the address on one line",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "721 Nevada St., Redlands, CA, 92373",
+            "placeholder": "721 Nevada St., Redlands, CA, 92373",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5f9b0a3ca26fb",
+            "label": "Business Phone Number",
+            "name": "business_phone_number",
+            "type": "text",
+            "instructions": "Enter the phone number",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "(909) 796-9422",
+            "placeholder": "(909) 796-9422",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1603997839
+}

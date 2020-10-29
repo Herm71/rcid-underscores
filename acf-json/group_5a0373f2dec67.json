@@ -47,14 +47,15 @@
                         "Medium": "Medium",
                         "Tumblr": "Tumblr",
                         "Snapchat": "Snapchat",
-                        "Google+": "Google+"
+                        "Google+": "Google+",
+                        "Houzz": "Houzz"
                     },
                     "default_value": false,
                     "allow_null": 0,
                     "multiple": 0,
                     "ui": 0,
-                    "ajax": 0,
                     "return_format": "value",
+                    "ajax": 0,
                     "placeholder": ""
                 },
                 {
@@ -79,9 +80,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "s_m_directory"
+                "value": "theme-general-settings"
             }
         ]
     ],
@@ -93,5 +94,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1603975383
+    "modified": 1603979441
 }
