@@ -32,19 +32,29 @@
       <?php } ?>
     </div>
   </div>
-
+  <!-- //TODO USE ACF for this content -->
   <div class="site-info">
-    <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ruth-chafin-interior-design' ) ); ?>">
-      <?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ruth-chafin-interior-design' ), 'WordPress' );
-				?>
-    </a>
-    <span class="sep"> | </span>
-    <?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ruth-chafin-interior-design' ), 'ruth-chafin-interior-design', '<a href="http://@Herm71">Jason Chafin</a>' );
-				?>
+    <div class="address-social">
+      <div class="address-social-left">
+        <ul class="rcid-address">
+          <li>Ruth Chafin Interior Design</li>
+          <li>CL# 123456789</li>
+          <li>721 Nevada St, Redlands, CA, 92373</li>
+          <li>(909) 796-9422</li>
+        </ul>
+      </div>
+      <div class="address-social-right">
+        <ul class="social">
+          <li>facebook</li>
+          <li>instagram</li>
+          <li>twitter</li>
+          <li>linked-in</li>
+          <li>houzz</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright"><span>Copyright © 2011&ndash;<?php echo date("Y");?></span></div>
+  </div>
   </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->

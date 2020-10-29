@@ -1,0 +1,39 @@
+.footer-widgets {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include media-query($on-desktop) {
+        grid-gap: ($spacing-unit * 1.5);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.address-social {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+        }
+    }
+    .rcid-address {
+        li {
+            &::after {
+                content: "|";
+                padding-left: 5px;
+                font-weight: 700;
+                color: $color__rcid-orange;
+            }
+            &:last-child {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+}
